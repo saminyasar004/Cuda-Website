@@ -6,5 +6,5 @@
 
 This website is created by [Samin Yasar][author]. You can find it [here][live].
 
-[author]: https://www.saminyasar.netlify.app/ "Samin Yasar Portfolio Website"
-[live]: https://www.cuda.vercel.app/ "Live preview"
+[author]: https://saminyasar.netlify.app/ "Samin Yasar Portfolio Website"
+[live]: https://cuda.vercel.app/ "Live preview"
