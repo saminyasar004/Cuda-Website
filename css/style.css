@@ -1,0 +1,728 @@
+/*============================*/
+/* basic style*/
+/*============================*/
+
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+html {
+  font-size:62.5%;
+  scroll-behavior:smooth;
+}
+body {
+  font-family: 'Titillium Web', sans-serif;
+  text-rendering:optimizeLegibility;
+  line-height: 1.3;
+  font-size: 1.6rem;
+  cursor:default;
+}
+ul li {
+  list-style:none;
+}
+a {
+  text-decoration:none;
+}
+h1 {
+  font-size:4.2rem;
+  color:#ffff;
+}
+h2 {
+  font-size:4rem;
+  text-transform:uppercase;
+  text-align: center;
+  letter-spacing: .3rem;
+  font-weight:600;
+  margin-top:0rem;
+  margin-bottom:2rem;
+  color:#fff;
+}
+h3 {
+  font-size:2.4rem;
+  font-weight:600;
+  color:#fff;
+}
+h4 {
+  font-size:1.9rem;
+  font-weight:400;
+  color:#fff;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+}
+
+/*===============================*/
+/* STCKY NAVIGATION START */
+/*================================*/
+
+.sticky {
+    position: fixed;
+    background: #864B8E;
+    width: 100%;
+    height: 8rem;
+    box-shadow: 0rem 0rem 2rem .2rem #fff;
+}
+nav {
+  transition:all .5s;
+  z-index: 1111111;
+}
+.sticky .logo {
+  width:26%;
+}
+.sticky .main_list {
+  margin-top:2.5rem;
+}
+
+
+/*==================================*/
+/* STICKY NAVIGATION END */
+/*==================================*/
+
+/*===============================*/
+/* re-usable componenet */
+/*===============================*/
+
+.row {
+  max-width:114rem;
+  margin:0 auto;
+}
+section {
+  padding:8rem 0rem;
+}
+
+/*=========== Heading ==========*/
+
+h2::after {
+  content:"";
+  display:block;
+  width:8.6rem;
+  height:.4rem;
+  margin:auto;
+  margin-top:2rem;
+  background: #14a58c;
+}
+
+/*=========== box ============*/
+
+.box {
+  padding:1%;
+}
+.box p {
+  color:#fff;
+  font-size:1.6rem;
+  font-weight: 300;
+  margin-top:2rem;
+}
+
+/*=========== button ==========*/
+
+.btn:link,
+.btn:visited,
+.btn {
+  background:#333;
+  color:#fff;
+  font-size:1.6rem;
+  border-bottom:.3rem solid #000;
+  border-radius:.5rem;
+  display:inline-block;
+  padding:1.5rem 6rem;
+  margin-top:4.5rem;
+}
+
+
+/*=================================*/
+/* paragraph*/
+/*================================*/
+
+
+.little_description {
+  width:60%;
+  margin-left:20%;
+  font-size:1.8rem;
+  text-align:center;
+  line-height:3rem;
+}
+
+
+/*=================================*/
+/* header section*/
+/*=================================*/
+
+
+header {
+    background: linear-gradient(rgba(135,80,156,.9),rgba(135,80,156,.9)),url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 80rem;
+    position: relative;
+}
+.logo {
+  width:35%;
+  height:auto;
+  float:left;
+}
+.main_list {
+  margin-top: 4rem;
+  float:right;
+}
+.main_list li {
+  display:inline-block;
+  margin-left:0rem;
+}
+.main_list li:first-child {
+  margin-left:0rem;
+}
+.main_list li a:link,
+.main_list li a:visited {
+  color:#fff;
+  font-size:1.6rem;
+  text-transform:uppercase;
+  background:#75488800;
+  padding:.6rem 1.6rem;
+  border-radius:.3rem;
+  display:inline-block;
+  transition:.3s;
+}
+.main_list li:hover a:link,
+.main_list li:hover a:visited {
+  background:rgba(100,58,121,1);
+}
+.active{
+  background:#754888;
+  border-radius:.3rem;
+}
+.hero-text-box {
+  width:114rem;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  text-align:center;
+}
+.btn-hero:link,
+.btn-hero:visited {
+    background: #ef5c2d;
+    border-bottom: .3rem solid #be512f;
+}
+.btn-hero:hover {
+    background: linear-gradient(#f86334,#c84a22);
+    border-bottom: .3rem solid #a53c1b;
+}
+
+
+/*==============================*/
+/* service_section*/
+/*==============================*/
+
+
+.service_section {
+  color:#fff;
+  text-align:center;
+  background: linear-gradient(rgba(23,194,164,.9),rgba(23,194,164,.9)),url(../img/services-bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center top;
+}
+.service_icon {
+  height:12.8rem;
+  margin-top:4.5rem;
+  margin-bottom:3.5rem;
+}
+
+
+/*================================*/
+/* meet our team */
+/*================================*/
+
+
+.team_section {
+    text-align: center;
+    background: linear-gradient(#e7f1f8e3,#e7f1f8d1),url(../img/team-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.team_section h2 {
+  color:#3C4761;
+}
+.team_section h2::after {
+  background:#c8d9e5;
+}
+.team_member {
+  width:20rem;
+  height:20rem;
+  margin-top:4.5rem;
+  margin-bottom:3.5rem;
+  border-radius:50%;
+}
+.team_section h3 {
+  color:#27283d;
+}
+.role {
+  color:#30bae7;
+  font-size:1.6rem;
+  text-transform:capitalize;
+  display:inline-block;
+  margin-top:.7rem;
+}
+.team_section .box p {
+  color:#3c4761;
+}
+.social_link {
+  margin-top:4.5rem;
+}
+.social_link ul li {
+  display:inline-block;
+  margin:0 .5rem;
+}
+.social_link ul li a {
+  color:#fff;
+}
+.social_link ul li a:link i::before {
+  background: #b6d2e5;
+  width:2rem;
+  height:2rem;
+  border-radius:50%;
+  padding:1rem;
+  font-size:2rem;
+  display:inline-block;
+  transition:all .5s;
+}
+.social_link ul li a:hover i::before {
+  background:#393939;
+  transform:rotate(360deg);
+}
+
+
+
+/*==============================*/
+/* skills section */
+/*==============================*/
+
+
+
+.skill_section {
+    color: #3c4761;
+    background: linear-gradient(#ffffffe0,#ffffffe0),url(../img/skill-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.skill_section h2 {
+  color:#3c4761;
+}
+.skill_section h2::after {
+  background:#DFE8ED;
+}
+.skill_section h3 {
+  color:#3c4761;
+}
+.skill_section .box {
+  margin-top:4.5rem;
+}
+svg.radial-progress circle {
+  stroke-width:5;
+}
+svg.radial-progress text {
+  fill:#3c4761;
+  font-size:1.5rem;
+}
+svg.web_design circle {
+  stroke:#30BAE7;
+}
+svg.html_css circle {
+  stroke:#D74680;
+}
+svg.graphic_design circle {
+  stroke:#15C7A8;
+}
+svg.ui_ux circle {
+  stroke:#30BAE7;
+}
+
+
+/*===============================*/
+/* portfolio section */
+/*===============================*/
+
+
+.portfolio_section {
+    background: linear-gradient(#ffe0a3ad,#ffe0a3bf),url(../img/portfolio-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align:center;
+}
+.portfolio_section h2 {
+  color:#3C4761;
+}
+.portfolio_section h2::after {
+  background:#E5C37F;
+}
+.portfolio_filter {
+  margin:4.5rem 0;
+}
+.portfolio_filter button {
+  background:#ebc985;
+  color:#3C4761;
+  font-size:1.8rem;
+  text-transform:uppercase;
+  padding:1rem 2rem;
+  border:none;
+  outline:none;
+  border-radius:.5rem;
+  margin: 0 .5rem;
+  transition:all .5s;
+}
+.portfolio_filter button:hover {
+    cursor: pointer;
+    box-shadow:inset 0rem .2rem .4rem 0rem #3C4761;
+}
+.portfolio_image {
+  width:100%;
+  height:auto;
+}
+.portfolio_section .mixitup-control-active {
+  background:#fff;
+}
+.portfolio_section .col1:nth-child(3) {
+  margin-left:0rem;
+}
+.portfolio_section h4 {
+  color:#3C4761;
+}
+
+.portfolio_section .btn-load {
+  background:#17c2a4;
+  border-color:#046a6a;
+}
+
+
+/*============================*/
+/* testimonial section */
+/*============================*/
+
+
+
+
+.testimonial_section {
+    background: linear-gradient(rgb(215 70 128 / 84%),rgb(215 70 128 / 82%)),url(../img/testimonial-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.testimonial_section h2::after {
+  background:#fff;
+  text-align: center;
+}
+.testimonial_section .little_description {
+  color:#fff;
+  text-align: center;
+}
+.testimonial_section .col1:nth-child(1),
+.testimonial_section .col1:nth-child(2) {
+  margin-top:4rem;
+}
+.testimonial_section .col1:nth-child(3),
+.testimonial_section .col1:nth-child(4) {
+  margin-top:8rem;
+}
+.client_photo {
+  width:10rem;
+  float:left;
+}
+.client_photo img {
+  height:8rem;
+  border-radius:50%;
+  margin-bottom:3rem;
+}
+.client_review {
+  width:35rem;
+  float:left;
+}
+.client_review p {
+  font-size: 2.1rem;
+  font-style:italic;
+  margin-top:0rem;
+  margin-bottom:2rem;
+}
+.client_review .role {
+  color:#ffd493;
+}
+
+
+
+/*=============================*/
+/* contact section */
+/*=============================*/
+
+
+
+.contact_section {
+    background: linear-gradient(#3c5499d9,#3c5499c4),url(../img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    background-attachment: fixed;
+    text-align: center;
+}
+.contact_section h2::after {
+  background: #273a71;
+}
+.contact_section .little_description {
+  color: #fff;
+}
+.contact_section form {
+  margin-top:5rem;
+  width:70%;
+  margin-left:15%;
+}
+.contact_section .last {
+  margin-right:-1rem !important;
+}
+.contact_section input[type="text"],
+.contact_section input[type="email"],
+.contact_section textarea {
+  background: #273a71;
+  border:.1rem solid #273a71;
+  border-radius:.5rem;
+  outline:none;
+  width:100%;
+  padding:1.5rem;
+  font-size: 1.8rem;
+  font-family: 'Titillium Web', sans-serif;
+  color:#fff;
+  margin:.5rem 0;
+}
+.contact_section textarea {
+  height:20rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+.contact_section form ::placeholder {
+  color: #fff;
+  opacity:1;
+}
+.btn-submit {
+  background:#30bae7;
+  border-bottom:.1rem solid #299ec5;
+  outline:none;
+  border-radius:.5rem;
+  border:.1rem solid #299ec5;
+  cursor:pointer;
+}
+
+
+/*===========================*/
+/*  footer section */
+/*===========================*/
+
+
+footer {
+  background: #344b8e;
+  padding:3rem 0;
+  border-top:.1rem solid #6687e7;
+  text-align:center;
+}
+footer ul li {
+  display: inline-block;
+  margin: 0 2rem;
+  transition:all .5s;
+}
+footer ul li a {
+  color:#fff;
+  text-transform: capitalize;
+  font-size: 2.4rem;
+}
+footer ul li:hover a {
+  color:#30BAE7;
+}
+
+
+/*=================================*/
+/* =========== END =============== */
+/*=================================*/
+
+
+/*=================================*/
+/* RESPONSIVE SECTION START */
+/*=================================*/
+
+
+/*=================================*/
+/* FOR 1020PX WIDTH */
+/*=================================*/
+
+
+
+@media only screen and (max-width:1020px) {
+
+  .main_list li a:link,
+  .main_list li a:visited {
+    padding:0.6rem 1rem;
+  }
+
+  .main_list {
+    display:none;
+  }
+
+  .hero-text-box {
+    width:75rem;
+  }
+
+  .sticky {
+    height:auto;
+  }
+  .sticky .logo {
+    width:20%;
+  }
+  .w_1020 {
+    padding-left:8%;
+    margin:auto;
+  }
+  .client_photo {
+    float: none;
+    margin-left: 26%;
+  }
+  .client_review {
+    float: none;
+    margin-left: 14%;
+  }
+  .client_review h3 {
+    margin-left:17%;
+  }
+  .client_review .role {
+    margin-left: 21%;
+  }
+  html {
+    font-size: 57.5%;
+  }
+
+
+
+/*=================================*/
+/* FOR 900PX WIDTH */
+/*=================================*/
+
+
+
+}
+@media only screen and (max-width:900px) {
+
+
+  .main_list li a:link,
+  .main_list li a:visited {
+      padding:.5rem .5rem;
+      font-size: 1.3rem;
+  }
+  .main_list {
+      margin-right: 2rem;
+      margin-top: 2.2rem;
+  }
+  .sticky {
+      height:auto;
+  }
+  .sticky .main_list {
+      margin-top: 2rem;
+  }
+  .w_900_team {
+      margin: auto;
+      width: 100%;
+  }
+  .w_900_skill {
+      margin: auto;
+      width:100%;
+  }
+  .w_900_portfolio {
+      margin: auto;
+      width: 77%;
+      padding-left: 23%;
+  }
+  .w_900_testimonial {
+    width: 100%;
+    padding-left: 20%;
+  }
+  .w_900_SERVICE {
+    width:100%;
+  }
+  .w_900_SERVICE p {
+    width:35%;
+    margin: auto;
+  }
+  .w_900_SERVICE:nth-child(3) {
+    margin-left: 0;
+  }
+  .w_900_team_description {
+      width:60%;
+      margin: auto;
+  }
+
+
+}
+
+
+/*=================================*/
+/* FOR 768PX WIDTH */
+/*=================================*/
+
+
+@media only screen and (max-width:768px) {
+
+  .client_review {
+    margin-left: 10%;
+  }
+  footer .row ul li a:link {
+    font-size: 1.6rem;;
+  }
+  .hero-text-box h1 {
+    font-size: 4rem;
+  }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================*/
+/* RESPONSIVE SECTION END */
+/*=================================*/
